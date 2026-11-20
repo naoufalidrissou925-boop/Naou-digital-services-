@@ -3,67 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NAOU DIGITAL SERVICES | Solutions Structurées</title>
+    <title>NAOU DIGITAL SERVICES | Cabinet de Prestations Intellectuelles & Numériques</title>
     
-    <!-- Meta SEO & Open Graph -->
-    <meta name="description" content="NAOU DIGITAL SERVICES — Cabinet indépendant de prestations intellectuelles et numériques au Bénin. Document Design, Presentation Studio, Data Tools, Surveys & Chess Mentoring.">
+    <!-- SEO & Référencement Technique -->
+    <meta name="description" content="NAOU DIGITAL SERVICES — Cabinet de prestations intellectuelles et numériques au Bénin. Conception de rapports, présentations PowerPoint, tableaux de bord Excel, formulaires d'enquête et Chess Mentoring.">
+    <meta name="keywords" content="Services numériques au Bénin, Conception de rapports professionnels, Création de présentations PowerPoint, Tableaux de bord Excel, Conception de formulaires d'enquête, Parakou, Cotonou, Chess Mentoring">
+    <meta name="author" content="Naoufal IDRISSOU — NAOU DIGITAL SERVICES">
+    <link rel="canonical" href="https://naoufalidrissou925-boop.github.io/Naou-digital-services-/">
+    
+    <!-- Open Graph / Réseaux Sociaux -->
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="NAOU DIGITAL SERVICES">
     <meta property="og:title" content="NAOU DIGITAL SERVICES | Structured solutions. Projects that move forward.">
-    <meta property="og:description" content="Cabinet de conseil et de prestations numériques au Bénin. Livrables professionnels, rigoureux et directement exploitables.">
+    <meta property="og:description" content="Cabinet de prestations intellectuelles et numériques au Bénin. Nous transformons vos exigences en livrables rigoureux, esthétiques et exploitables.">
+    <meta property="og:url" content="https://naoufalidrissou925-boop.github.io/Naou-digital-services-/">
     
-    <!-- Fonts Google -->
+    <!-- Favicon SVG Intégré -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23102B46'/><text x='50' y='66' font-family='sans-serif' font-weight='800' font-size='50' fill='%23E7B85C' text-anchor='middle'>N.</text></svg>">
+
+    <!-- Données Structurées Schema.org (SEO Google) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "NAOU DIGITAL SERVICES",
+      "description": "Cabinet de prestations intellectuelles et numériques au Bénin : conception de documents, présentations, outils de gestion Data, enquêtes et mentorat aux échecs.",
+      "founder": {
+        "@type": "Person",
+        "name": "Naoufal IDRISSOU"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Parakou",
+        "addressCountry": "BJ"
+      },
+      "telephone": "+2290143372442",
+      "email": "naoufalidrissou925@gmail.com",
+      "priceRange": "800 F CFA - 10 000 F CFA",
+      "knowsLanguage": ["French", "English"]
+    }
+    </script>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Icons FontAwesome -->
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
         :root {
             --bleu-profond: #102B46;
+            --bleu-nuit: #0A1C2E;
             --bleu-petrole: #167D9A;
             --gris-bleute: #E9F1F5;
             --blanc: #FFFFFF;
             --accent-dore: #E7B85C;
             --accent-dore-hover: #D4A347;
             --texte-sombre: #1C2833;
-            --texte-clair: #566573;
+            --texte-clair: #52606D;
             --fond-leger: #F8FAFC;
-            --border-color: #E2E8F0;
+            --border-color: #DCE4EC;
+            --succes: #15803D;
             --font-main: 'Manrope', sans-serif;
             --font-sub: 'DM Sans', sans-serif;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
         body {
             font-family: var(--font-sub);
             color: var(--texte-sombre);
             background-color: var(--fond-leger);
-            line-height: 1.6;
+            line-height: 1.65;
         }
+        h1, h2, h3, h4, .brand-font { font-family: var(--font-main); }
 
-        h1, h2, h3, h4, h5, h6, .brand-logo {
-            font-family: var(--font-main);
-        }
-
-        /* Navigation Header */
+        /* Header */
         header {
             background-color: var(--bleu-profond);
             color: var(--blanc);
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 20px rgba(10, 28, 46, 0.2);
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
 
@@ -73,37 +97,39 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 1.5rem;
+            padding: 0.9rem 1.5rem;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
             text-decoration: none;
             color: var(--blanc);
         }
 
-        .logo-badge {
-            background-color: var(--bleu-petrole);
+        .logo-mark {
+            background: linear-gradient(135deg, var(--bleu-petrole), #0E5A70);
             color: var(--accent-dore);
+            font-family: var(--font-main);
             font-weight: 800;
-            padding: 6px 12px;
-            border-radius: 6px;
-            font-size: 1.1rem;
-            letter-spacing: 1px;
-            border: 1px solid rgba(231, 184, 92, 0.3);
+            width: 38px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            border: 1px solid rgba(231, 184, 92, 0.45);
         }
 
-        .logo-text {
-            font-weight: 700;
-            font-size: 1.1rem;
-            letter-spacing: 0.5px;
-        }
+        .logo-text-group { display: flex; flex-direction: column; }
+        .logo-title { font-weight: 800; font-size: 1rem; letter-spacing: 0.6px; line-height: 1.1; }
+        .logo-sub { font-size: 0.7rem; color: var(--accent-dore); letter-spacing: 1px; text-transform: uppercase; }
 
         .nav-links {
             display: flex;
-            gap: 1.8rem;
+            gap: 1.4rem;
             list-style: none;
             align-items: center;
         }
@@ -111,775 +137,724 @@
         .nav-links a {
             color: var(--gris-bleute);
             text-decoration: none;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             font-weight: 500;
-            transition: color 0.3s ease;
+            transition: color 0.25s ease;
         }
 
-        .nav-links a:hover {
-            color: var(--accent-dore);
+        .nav-links a:hover { color: var(--accent-dore); }
+
+        .lang-switch {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--blanc);
+            padding: 0.35rem 0.7rem;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.25s ease;
         }
+        .lang-switch:hover { border-color: var(--accent-dore); color: var(--accent-dore); }
 
         .btn-header {
-            background-color: var(--bleu-petrole);
-            color: var(--blanc);
-            padding: 0.6rem 1.3rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-            border: 1px solid transparent;
-        }
-
-        .btn-header:hover {
             background-color: var(--accent-dore);
-            color: var(--bleu-profond);
+            color: var(--bleu-profond) !important;
+            padding: 0.55rem 1.1rem;
+            border-radius: 6px;
+            font-weight: 700 !important;
+            transition: all 0.25s ease;
         }
+        .btn-header:hover { background-color: var(--accent-dore-hover); transform: translateY(-1px); }
 
         .menu-toggle {
             display: none;
             background: none;
-            border: none;
+            border: 1px solid rgba(255,255,255,0.2);
             color: var(--blanc);
-            font-size: 1.5rem;
+            padding: 6px 10px;
+            border-radius: 6px;
+            font-size: 1.2rem;
             cursor: pointer;
         }
 
-        /* Hero Section */
+        /* Hero Section avec motif architectural distinctif */
         .hero {
-            background: linear-gradient(135deg, var(--bleu-profond) 0%, #0B1D30 100%);
+            background-color: var(--bleu-profond);
+            background-image: 
+                radial-gradient(circle at 85% 15%, rgba(22, 125, 154, 0.22) 0%, transparent 45%),
+                radial-gradient(circle at 15% 85%, rgba(231, 184, 92, 0.08) 0%, transparent 40%),
+                linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 100% 100%, 100% 100%, 40px 40px, 40px 40px;
             color: var(--blanc);
-            padding: 6rem 1.5rem 5rem;
+            padding: 5.5rem 1.5rem 4.5rem;
             text-align: center;
-            position: relative;
-            overflow: hidden;
         }
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: radial-gradient(circle at 50% 30%, rgba(22, 125, 154, 0.15), transparent 70%);
-            pointer-events: none;
-        }
-
-        .hero-content {
-            max-width: 900px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 2;
-        }
+        .hero-content { max-width: 920px; margin: 0 auto; }
 
         .hero-badge {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
             background-color: rgba(231, 184, 92, 0.12);
             color: var(--accent-dore);
-            border: 1px solid rgba(231, 184, 92, 0.3);
+            border: 1px solid rgba(231, 184, 92, 0.35);
             padding: 6px 16px;
             border-radius: 50px;
-            font-size: 0.85rem;
+            font-size: 0.82rem;
             font-weight: 700;
+            letter-spacing: 1.2px;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
             margin-bottom: 1.5rem;
         }
 
         .hero h1 {
-            font-size: 3rem;
+            font-size: 2.85rem;
             font-weight: 800;
-            line-height: 1.25;
-            margin-bottom: 1.5rem;
-            color: var(--blanc);
+            line-height: 1.2;
+            margin-bottom: 1.4rem;
         }
 
         .hero p {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             color: var(--gris-bleute);
-            max-width: 780px;
-            margin: 0 auto 2.5rem;
-            font-weight: 400;
+            max-width: 760px;
+            margin: 0 auto 2.2rem;
         }
 
         .hero-buttons {
             display: flex;
             justify-content: center;
-            gap: 1.2rem;
+            gap: 1rem;
             flex-wrap: wrap;
         }
 
         .btn-primary {
             background-color: var(--accent-dore);
             color: var(--bleu-profond);
-            padding: 0.9rem 2rem;
+            padding: 0.9rem 1.9rem;
             border-radius: 6px;
             text-decoration: none;
             font-weight: 700;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(231, 184, 92, 0.25);
             display: inline-flex;
             align-items: center;
             gap: 8px;
+            transition: all 0.25s ease;
         }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            background-color: var(--accent-dore-hover);
-        }
+        .btn-primary:hover { background-color: var(--accent-dore-hover); transform: translateY(-2px); }
 
         .btn-secondary {
-            border: 1px solid var(--gris-bleute);
+            border: 1px solid rgba(233, 241, 245, 0.45);
             color: var(--blanc);
-            padding: 0.9rem 2rem;
+            padding: 0.9rem 1.9rem;
             border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
-            transition: all 0.3s ease;
             display: inline-flex;
             align-items: center;
             gap: 8px;
+            transition: all 0.25s ease;
         }
+        .btn-secondary:hover { border-color: var(--accent-dore); color: var(--accent-dore); background: rgba(255,255,255,0.04); }
 
-        .btn-secondary:hover {
-            background-color: rgba(233, 241, 245, 0.1);
-            color: var(--accent-dore);
-            border-color: var(--accent-dore);
+        /* Trust Bar */
+        .trust-bar {
+            background-color: var(--bleu-nuit);
+            color: var(--gris-bleute);
+            padding: 1.2rem 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.06);
         }
-
-        /* Section Layouts */
-        .container {
-            max-width: 1200px;
+        .trust-grid {
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 5rem 1.5rem;
-        }
-
-        .section-title {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
             text-align: center;
-            margin-bottom: 3.5rem;
+            font-size: 0.88rem;
         }
+        .trust-item i { color: var(--accent-dore); margin-right: 6px; }
 
-        .section-title h2 {
-            font-size: 2.2rem;
-            color: var(--bleu-profond);
-            font-weight: 800;
-            position: relative;
-            display: inline-block;
-        }
-
+        /* Sections Generales */
+        .container { max-width: 1200px; margin: 0 auto; padding: 4.5rem 1.5rem; }
+        .section-title { text-align: center; margin-bottom: 3rem; }
+        .section-title h2 { font-size: 2.1rem; color: var(--bleu-profond); font-weight: 800; }
         .section-title h2::after {
-            content: '';
-            display: block;
-            width: 50px;
-            height: 3px;
-            background-color: var(--accent-dore);
-            margin: 0.6rem auto 0;
-            border-radius: 2px;
+            content: ''; display: block; width: 48px; height: 3px;
+            background-color: var(--accent-dore); margin: 0.6rem auto 0; border-radius: 2px;
         }
+        .section-title p { color: var(--texte-clair); font-size: 1.02rem; margin-top: 0.75rem; max-width: 680px; margin-inline: auto; }
 
-        .section-title p {
-            color: var(--texte-clair);
-            font-size: 1.05rem;
-            margin-top: 0.8rem;
-            max-width: 650px;
-            margin-left: auto;
-            margin-right: auto;
+        /* Entrées par Profil (Conversion) */
+        .profiles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
         }
+        .profile-box {
+            background: var(--blanc);
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--bleu-petrole);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+        .profile-box h4 { color: var(--bleu-profond); margin-bottom: 0.4rem; font-size: 1.05rem; }
+        .profile-box p { font-size: 0.9rem; color: var(--texte-clair); }
 
-        /* Grid Services */
+        /* Approche en 4 Etapes */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 1.5rem;
+        }
+        .step-card {
+            background: var(--blanc);
+            padding: 1.8rem;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            position: relative;
+        }
+        .step-num {
+            font-family: var(--font-main);
+            font-weight: 800;
+            font-size: 1.8rem;
+            color: rgba(22, 125, 154, 0.2);
+            margin-bottom: 0.5rem;
+        }
+        .step-card h4 { color: var(--bleu-profond); margin-bottom: 0.5rem; }
+        .step-card p { font-size: 0.9rem; color: var(--texte-clair); }
+
+        /* Pôles d'expertise */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.8rem;
         }
-
         .service-card {
             background: var(--blanc);
             border-radius: 12px;
-            padding: 2.2rem;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+            padding: 2rem;
             border: 1px solid var(--border-color);
-            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            box-shadow: 0 4px 18px rgba(16, 43, 70, 0.04);
+            transition: transform 0.25s ease, border-color 0.25s ease;
+        }
+        .service-card:hover { transform: translateY(-4px); border-color: var(--bleu-petrole); }
+        .service-icon {
+            width: 50px; height: 50px; background: var(--gris-bleute); color: var(--bleu-petrole);
+            border-radius: 10px; display: flex; align-items: center; justify-content: center;
+            font-size: 1.4rem; margin-bottom: 1.2rem;
+        }
+        .service-card h3 { color: var(--bleu-profond); font-size: 1.25rem; margin-bottom: 0.6rem; }
+        .service-card p { color: var(--texte-clair); font-size: 0.92rem; margin-bottom: 1.2rem; }
+        .service-list { list-style: none; border-top: 1px solid #EDF2F7; padding-top: 1rem; }
+        .service-list li { font-size: 0.88rem; margin-bottom: 0.45rem; display: flex; align-items: center; gap: 8px; }
+        .service-list li i { color: var(--bleu-petrole); font-size: 0.8rem; }
+
+        /* Portfolio Etudes de Cas */
+        .cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+            gap: 1.8rem;
+        }
+        .case-card {
+            background: var(--blanc);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            overflow: hidden;
             display: flex;
             flex-direction: column;
         }
-
-        .service-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 12px 30px rgba(16, 43, 70, 0.08);
-            border-color: var(--bleu-petrole);
-        }
-
-        .service-icon {
-            width: 55px;
-            height: 55px;
-            background-color: var(--gris-bleute);
-            color: var(--bleu-petrole);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.6rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .service-card h3 {
-            color: var(--bleu-profond);
-            font-size: 1.35rem;
-            margin-bottom: 0.8rem;
-            font-weight: 700;
-        }
-
-        .service-card p {
-            color: var(--texte-clair);
-            font-size: 0.95rem;
-            margin-bottom: 1.5rem;
-            flex-grow: 1;
-        }
-
-        .service-list {
-            list-style: none;
-            border-top: 1px solid #EDF2F7;
-            padding-top: 1.2rem;
-        }
-
-        .service-list li {
-            font-size: 0.9rem;
-            color: var(--texte-sombre);
-            margin-bottom: 0.6rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .service-list li i {
-            color: var(--bleu-petrole);
-            font-size: 0.85rem;
-        }
-
-        /* Portfolio Section */
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 1.8rem;
-        }
-
-        .portfolio-card {
-            background: var(--blanc);
-            border-radius: 10px;
-            overflow: hidden;
-            border: 1px solid var(--border-color);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-            transition: transform 0.3s ease;
-        }
-
-        .portfolio-card:hover {
-            transform: translateY(-4px);
-        }
-
-        .portfolio-header {
-            background-color: var(--bleu-profond);
+        .case-top {
+            background: var(--bleu-profond);
             color: var(--blanc);
-            padding: 1.5rem;
-            text-align: center;
-            position: relative;
+            padding: 1.2rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-
-        .portfolio-tag {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: var(--accent-dore);
-            color: var(--bleu-profond);
-            font-size: 0.7rem;
-            font-weight: 800;
-            padding: 3px 8px;
+        .case-badge {
+            background: rgba(231, 184, 92, 0.18);
+            color: var(--accent-dore);
+            padding: 3px 10px;
             border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
             text-transform: uppercase;
         }
-
-        .portfolio-body {
-            padding: 1.5rem;
-        }
-
-        .portfolio-body h4 {
+        .case-body { padding: 1.5rem; flex-grow: 1; }
+        .case-body h4 { color: var(--bleu-profond); font-size: 1.12rem; margin-bottom: 0.8rem; }
+        .case-detail { font-size: 0.88rem; margin-bottom: 0.6rem; color: var(--texte-clair); }
+        .case-detail strong { color: var(--texte-sombre); }
+        .case-result {
+            margin-top: 1rem;
+            padding: 0.75rem;
+            background: var(--gris-bleute);
+            border-radius: 6px;
+            font-size: 0.86rem;
             color: var(--bleu-profond);
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
+            font-weight: 600;
         }
 
-        .portfolio-body p {
-            color: var(--texte-clair);
-            font-size: 0.88rem;
-            margin-bottom: 1rem;
-        }
-
-        /* Tarifs Section Dark */
+        /* Tarifs Section */
         .tarifs-section {
-            background: linear-gradient(135deg, #0D2338 0%, var(--bleu-profond) 100%);
+            background: linear-gradient(135deg, var(--bleu-nuit) 0%, var(--bleu-profond) 100%);
             color: var(--blanc);
-            padding: 5rem 1.5rem;
+            padding: 4.5rem 1.5rem;
         }
-
-        .tarifs-section .section-title h2 {
-            color: var(--blanc);
-        }
-
-        .tarifs-section .section-title p {
-            color: var(--gris-bleute);
-        }
-
+        .tarifs-section .section-title h2 { color: var(--blanc); }
+        .tarifs-section .section-title p { color: var(--gris-bleute); }
         .tarifs-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+            gap: 1.8rem;
         }
-
         .tarif-card {
             background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.12);
             border-radius: 12px;
-            padding: 2rem;
-            backdrop-filter: blur(10px);
+            padding: 1.8rem;
         }
-
         .tarif-card h3 {
             color: var(--accent-dore);
             border-bottom: 1px solid rgba(231, 184, 92, 0.3);
             padding-bottom: 0.6rem;
-            margin-bottom: 1.2rem;
-            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
             display: flex;
-            align-items: center;
             justify-content: space-between;
+            align-items: center;
         }
-
-        .tarif-table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
+        .tarif-table { width: 100%; border-collapse: collapse; }
         .tarif-table td {
-            padding: 0.7rem 0;
-            border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
-            font-size: 0.95rem;
+            padding: 0.6rem 0;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.12);
+            font-size: 0.92rem;
             color: var(--gris-bleute);
         }
-
-        .tarif-table td:last-child {
-            text-align: right;
-            font-weight: 700;
-            color: var(--blanc);
+        .tarif-table td:last-child { text-align: right; font-weight: 700; color: var(--blanc); }
+        .tarif-note {
+            max-width: 900px;
+            margin: 2.5rem auto 0;
+            background: rgba(255,255,255,0.06);
+            padding: 1.2rem 1.5rem;
+            border-radius: 8px;
+            font-size: 0.88rem;
+            color: var(--gris-bleute);
+            border-left: 3px solid var(--accent-dore);
         }
 
-        /* Formulaire & Contact Grid */
-        .contact-section-wrapper {
+        /* Gouvernance & Responsable */
+        .gov-card {
+            background: var(--blanc);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2.5rem;
             display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: 3rem;
-            background-color: var(--blanc);
-            border-radius: 16px;
-            padding: 3rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-            border: 1px solid var(--border-color);
-        }
-
-        .contact-info-side h3 {
-            color: var(--bleu-profond);
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-
-        .info-card-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 15px;
-            margin-bottom: 1.5rem;
-        }
-
-        .info-card-icon {
-            width: 48px;
-            height: 48px;
-            background-color: var(--gris-bleute);
-            color: var(--bleu-petrole);
-            border-radius: 10px;
-            display: flex;
+            grid-template-columns: 1.3fr 1fr;
+            gap: 2.5rem;
             align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            flex-shrink: 0;
         }
-
-        .info-card-text h4 {
-            font-size: 0.85rem;
-            color: var(--texte-clair);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .info-card-text a, .info-card-text p {
+        .gov-badges { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+        .gov-pill {
+            background: var(--gris-bleute);
+            color: var(--bleu-profond);
+            font-size: 0.82rem;
             font-weight: 700;
-            color: var(--bleu-profond);
-            text-decoration: none;
-            font-size: 1.05rem;
+            padding: 5px 12px;
+            border-radius: 20px;
         }
 
-        .form-group {
-            margin-bottom: 1.2rem;
-        }
-
-        .form-group label {
-            display: block;
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: var(--bleu-profond);
-            margin-bottom: 0.4rem;
-        }
-
-        .form-control {
-            width: 100%;
-            padding: 0.8rem 1rem;
+        /* Formulaire Double Choix */
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 2.5rem;
+            background: var(--blanc);
+            padding: 2.5rem;
+            border-radius: 14px;
             border: 1px solid var(--border-color);
-            border-radius: 6px;
-            font-family: var(--font-sub);
-            font-size: 0.95rem;
-            background-color: #F8FAFC;
-            transition: border-color 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.04);
         }
-
-        .form-control:focus {
-            outline: none;
-            border-color: var(--bleu-petrole);
-            background-color: var(--blanc);
+        .info-row { display: flex; gap: 14px; margin-bottom: 1.4rem; align-items: flex-start; }
+        .info-icon {
+            width: 44px; height: 44px; background: var(--gris-bleute); color: var(--bleu-petrole);
+            border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
         }
+        .form-group { margin-bottom: 1.1rem; }
+        .form-group label { display: block; font-size: 0.88rem; font-weight: 700; color: var(--bleu-profond); margin-bottom: 0.35rem; }
+        .form-control {
+            width: 100%; padding: 0.75rem 0.95rem; border: 1px solid var(--border-color);
+            border-radius: 6px; font-family: var(--font-sub); font-size: 0.94rem; background: #F8FAFC;
+        }
+        .form-control:focus { outline: none; border-color: var(--bleu-petrole); background: var(--blanc); }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 
-        .form-row {
+        .action-buttons-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 1rem;
+            gap: 0.8rem;
+            margin-top: 1rem;
         }
+        .btn-wa {
+            background: #1E9E52; color: var(--blanc); border: none; padding: 0.9rem;
+            border-radius: 6px; font-weight: 700; cursor: pointer; display: flex;
+            align-items: center; justify-content: center; gap: 8px; font-size: 0.92rem;
+        }
+        .btn-wa:hover { background: #178243; }
+        .btn-mail {
+            background: var(--bleu-profond); color: var(--blanc); border: none; padding: 0.9rem;
+            border-radius: 6px; font-weight: 700; cursor: pointer; display: flex;
+            align-items: center; justify-content: center; gap: 8px; font-size: 0.92rem;
+        }
+        .btn-mail:hover { background: var(--bleu-petrole); }
 
-        .btn-submit-form {
-            width: 100%;
-            background-color: var(--bleu-profond);
-            color: var(--blanc);
-            padding: 1rem;
-            border: none;
+        .feedback-banner {
+            display: none;
+            margin-top: 1rem;
+            padding: 0.85rem 1rem;
             border-radius: 6px;
-            font-weight: 700;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
+            background-color: #DCFCE7;
+            color: var(--succes);
+            border: 1px solid #86EFAC;
+            font-size: 0.9rem;
+            font-weight: 600;
         }
 
-        .btn-submit-form:hover {
-            background-color: var(--bleu-petrole);
-        }
-
-        /* FAQ Accordion */
-        .faq-accordion {
-            max-width: 850px;
-            margin: 0 auto;
-        }
-
+        /* FAQ Accessible */
+        .faq-list { max-width: 860px; margin: 0 auto; }
         .faq-item {
             background: var(--blanc);
-            border-radius: 8px;
-            margin-bottom: 1rem;
             border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 0.9rem;
             overflow: hidden;
         }
-
-        .faq-question {
-            padding: 1.2rem 1.5rem;
-            font-weight: 700;
-            color: var(--bleu-profond);
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .faq-btn {
+            width: 100%; text-align: left; background: none; border: none;
+            padding: 1.15rem 1.4rem; font-family: var(--font-main); font-weight: 700;
+            font-size: 1rem; color: var(--bleu-profond); cursor: pointer;
+            display: flex; justify-content: space-between; align-items: center;
         }
+        .faq-panel { padding: 0 1.4rem 1.2rem; color: var(--texte-clair); font-size: 0.93rem; display: none; }
+        .faq-item.open .faq-panel { display: block; }
+        .faq-item.open .faq-btn i { transform: rotate(180deg); color: var(--bleu-petrole); }
 
-        .faq-answer {
-            padding: 0 1.5rem 1.2rem;
-            color: var(--texte-clair);
-            font-size: 0.95rem;
-            display: none;
+        /* Modals Légales */
+        .modal-overlay {
+            display: none; position: fixed; inset: 0; background: rgba(10, 28, 46, 0.75);
+            z-index: 2000; align-items: center; justify-content: center; padding: 1rem;
         }
-
-        .faq-item.active .faq-answer {
-            display: block;
+        .modal-overlay.active { display: flex; }
+        .modal-box {
+            background: var(--blanc); max-width: 680px; width: 100%; max-height: 85vh;
+            overflow-y: auto; border-radius: 12px; padding: 2rem; position: relative;
         }
-
-        .faq-item.active .faq-question i {
-            transform: rotate(180deg);
-            color: var(--bleu-petrole);
+        .modal-close {
+            position: absolute; top: 1rem; right: 1rem; background: var(--gris-bleute);
+            border: none; width: 34px; height: 34px; border-radius: 50%; cursor: pointer; font-weight: 800;
         }
+        .modal-box h3 { color: var(--bleu-profond); margin-bottom: 1rem; }
+        .modal-box p, .modal-box li { font-size: 0.9rem; color: var(--texte-clair); margin-bottom: 0.7rem; }
 
         /* Footer */
         footer {
-            background-color: var(--bleu-profond);
+            background-color: var(--bleu-nuit);
             color: var(--gris-bleute);
             padding: 3rem 1.5rem 2rem;
-            font-size: 0.9rem;
-            border-top: 1px solid rgba(255,255,255,0.08);
+            font-size: 0.88rem;
         }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+        .footer-top {
+            max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between;
+            flex-wrap: wrap; gap: 1.5rem; padding-bottom: 1.8rem; border-bottom: 1px solid rgba(255,255,255,0.1);
         }
-
-        .footer-bottom {
-            max-width: 1200px;
-            margin: 1.5rem auto 0;
-            text-align: center;
-            font-size: 0.85rem;
-            opacity: 0.8;
+        .legal-links { display: flex; gap: 1.2rem; flex-wrap: wrap; }
+        .legal-links button {
+            background: none; border: none; color: var(--accent-dore); cursor: pointer;
+            font-size: 0.86rem; text-decoration: underline;
         }
+        .footer-bottom { max-width: 1200px; margin: 1.4rem auto 0; text-align: center; opacity: 0.8; }
 
-        /* Responsive Mobile */
         @media (max-width: 900px) {
-            .contact-section-wrapper {
-                grid-template-columns: 1fr;
-            }
+            .gov-card, .contact-wrapper { grid-template-columns: 1fr; }
         }
-
         @media (max-width: 768px) {
-            .menu-toggle {
-                display: block;
-            }
-
+            .menu-toggle { display: block; }
             .nav-links {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background-color: var(--bleu-profond);
-                padding: 1.5rem;
-                border-bottom: 1px solid rgba(255,255,255,0.1);
+                display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0;
+                background: var(--bleu-profond); padding: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.1);
             }
-
-            .nav-links.show {
-                display: flex;
-            }
-
-            .hero h1 {
-                font-size: 2.1rem;
-            }
-
-            .hero p {
-                font-size: 1rem;
-            }
-
-            .form-row {
-                grid-template-columns: 1fr;
-            }
+            .nav-links.show { display: flex; }
+            .hero h1 { font-size: 2rem; }
+            .form-row, .action-buttons-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Header Navigation -->
+    <!-- Header -->
     <header>
         <div class="nav-container">
             <a href="#" class="logo">
-                <span class="logo-badge">NDS</span>
-                <span class="logo-text">NAOU DIGITAL SERVICES</span>
+                <span class="logo-mark">N.</span>
+                <div class="logo-text-group">
+                    <span class="logo-title">NAOU DIGITAL SERVICES</span>
+                    <span class="logo-sub" data-i18n="nav_sub">Cabinet Intellectuel & Numérique</span>
+                </div>
             </a>
-            <button class="menu-toggle" id="menuToggle" aria-label="Menu de navigation"><i class="fas fa-bars"></i></button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#services">Pôles</a></li>
-                <li><a href="#portfolio">Démos</a></li>
-                <li><a href="#tarifs">Tarifs</a></li>
+                <li><a href="#approche" data-i18n="nav_method">Méthode</a></li>
+                <li><a href="#services" data-i18n="nav_services">Pôles</a></li>
+                <li><a href="#portfolio" data-i18n="nav_cases">Études de cas</a></li>
+                <li><a href="#tarifs" data-i18n="nav_pricing">Tarifs</a></li>
+                <li><a href="#gouvernance" data-i18n="nav_about">Le Cabinet</a></li>
                 <li><a href="#faq">FAQ</a></li>
-                <li><a href="#devis" class="btn-header">Demander un devis</a></li>
+                <li><button type="button" class="lang-switch" id="langBtn" aria-label="Changer de langue">EN / FR</button></li>
+                <li><a href="#devis" class="btn-header" data-i18n="nav_quote">Devis gratuit</a></li>
             </ul>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
         <div class="hero-content">
-            <div class="hero-badge">Structured solutions. Projects that move forward.</div>
-            <h1>Cabinet de Prestations Intellectuelles & Numériques</h1>
-            <p>Nous transformons les exigences des étudiants, entreprises, associations et particuliers en solutions rigoureusement structurées, esthétiques et directement exploitables.</p>
+            <div class="hero-badge"><i class="fas fa-layer-group"></i> Structured solutions. Projects that move forward.</div>
+            <h1 data-i18n="hero_title">Cabinet de Prestations Intellectuelles & Numériques</h1>
+            <p data-i18n="hero_desc">Nous accompagnons les étudiants, associations, entreprises et particuliers au Bénin et à l'international dans la conception de documents structurés, présentations d'impact, outils de gestion Data et dispositifs d'évaluation.</p>
             <div class="hero-buttons">
-                <a href="#devis" class="btn-primary"><i class="fas fa-paper-plane"></i> Lancer mon projet</a>
-                <a href="https://wa.me/2290143372442" target="_blank" class="btn-secondary"><i class="fab fa-whatsapp"></i> WhatsApp direct</a>
+                <a href="#devis" class="btn-primary"><i class="fas fa-file-signature"></i> <span data-i18n="hero_cta1">Demander un devis gratuit</span></a>
+                <a href="#portfolio" class="btn-secondary"><i class="fas fa-folder-open"></i> <span data-i18n="hero_cta2">Voir nos réalisations</span></a>
             </div>
         </div>
     </section>
 
-    <!-- Positionnement / À Propos -->
-    <section id="about" class="container">
-        <div class="section-title">
-            <h2>Positionnement Stratégique</h2>
-            <p>L'alliance constante de la rigueur méthodologique et des standards visuels professionnels.</p>
+    <!-- Barre de réassurance -->
+    <div class="trust-bar">
+        <div class="trust-grid">
+            <div class="trust-item"><i class="fas fa-clock"></i> <span data-i18n="trust_1">Réponse garantie sous 24h ouvrées</span></div>
+            <div class="trust-item"><i class="fas fa-lock"></i> <span data-i18n="trust_2">Confidentialité stricte des fichiers</span></div>
+            <div class="trust-item"><i class="fas fa-check-double"></i> <span data-i18n="trust_3">2 séries de révisions incluses</span></div>
+            <div class="trust-item"><i class="fas fa-graduation-cap"></i> <span data-i18n="trust_4">Respect total de l'éthique académique</span></div>
         </div>
-        <div style="max-width: 850px; margin: 0 auto; text-align: center; color: var(--texte-clair); line-height: 1.8;">
-            <p style="font-size: 1.1rem; margin-bottom: 1.2rem;">
-                <strong>NAOU DIGITAL SERVICES</strong> se positionne comme un cabinet indépendant de conseil et d'exécution intellectuelle. Notre mission est de valoriser vos travaux par une approche axée sur la clarté, l'efficacité et la performance.
-            </p>
-            <p>
-                Chaque rapport, présentation, outil Data ou questionnaire bénéficie d'une rigueur absolue dans la structuration des données, d'une présentation moderne et d'un engagement total en matière de <strong>confidentialité</strong>.
-            </p>
+    </div>
+
+    <!-- Entrées par Profil & Méthode -->
+    <section id="approche" class="container">
+        <div class="section-title">
+            <h2 data-i18n="profile_title">Une réponse adaptée à votre profil</h2>
+            <p data-i18n="profile_sub">Identifiez directement l'accompagnement correspondant à votre statut et à vos objectifs.</p>
+        </div>
+
+        <div class="profiles-grid">
+            <div class="profile-box">
+                <h4><i class="fas fa-user-graduate" style="color:var(--bleu-petrole);"></i> <span data-i18n="prof_1_t">Étudiants & Chercheurs</span></h4>
+                <p data-i18n="prof_1_d">Mise en forme normative de mémoires et rapports de stage, supports PowerPoint de soutenance et questionnaires d'enquête de terrain.</p>
+            </div>
+            <div class="profile-box">
+                <h4><i class="fas fa-building" style="color:var(--bleu-petrole);"></i> <span data-i18n="prof_2_t">Associations & Organisations</span></h4>
+                <p data-i18n="prof_2_d">Rapports d'activités annuels, bilans financiers, tableaux de suivi de membres et dispositifs d'évaluation d'impact.</p>
+            </div>
+            <div class="profile-box">
+                <h4><i class="fas fa-briefcase" style="color:var(--bleu-petrole);"></i> <span data-i18n="prof_3_t">Entreprises & Entrepreneurs</span></h4>
+                <p data-i18n="prof_3_d">Tableaux de bord Excel/Sheets de gestion de stocks et trésorerie, pitch decks commerciaux et dossiers administratifs.</p>
+            </div>
+            <div class="profile-box">
+                <h4><i class="fas fa-chess" style="color:var(--bleu-petrole);"></i> <span data-i18n="prof_4_t">Joueurs & Clubs d'Échecs</span></h4>
+                <p data-i18n="prof_4_d">Accompagnement stratégique individuel ou collectif, analyse de parties et préparation méthodique aux tournois.</p>
+            </div>
+        </div>
+
+        <div class="section-title" style="margin-top: 4rem;">
+            <h2 data-i18n="method_title">Notre Méthode en 4 Étapes</h2>
+            <p data-i18n="method_sub">Un processus rigoureux qui garantit la conformité de chaque livrable.</p>
+        </div>
+
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-num">01</div>
+                <h4 data-i18n="step_1_t">Écouter</h4>
+                <p data-i18n="step_1_d">Analyse précise de votre besoin, de vos contraintes techniques et de votre échéance.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">02</div>
+                <h4 data-i18n="step_2_t">Cadrer</h4>
+                <p data-i18n="step_2_d">Validation du devis détaillé, du périmètre exact et du calendrier d'exécution avant démarrage.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">03</div>
+                <h4 data-i18n="step_3_t">Concevoir</h4>
+                <p data-i18n="step_3_d">Structuration intellectuelle, mise en page soignée ou modélisation des données selon nos standards.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">04</div>
+                <h4 data-i18n="step_4_t">Vérifier & Livrer</h4>
+                <p data-i18n="step_4_d">Contrôle qualité complet, intégration de vos retours et remise des fichiers sources exploitables.</p>
+            </div>
         </div>
     </section>
 
-    <!-- Pôles d'Expertise -->
-    <section id="services" style="background-color: #F1F5F9; padding: 5rem 1.5rem;">
+    <!-- Les 5 Pôles -->
+    <section id="services" style="background-color: #EEF3F8; padding: 4.5rem 1.5rem;">
         <div class="container" style="padding: 0;">
             <div class="section-title">
-                <h2> Nos 5 Pôles d'Activité</h2>
-                <p>Des compétences expertes structurées pour répondre à chaque étape de votre projet.</p>
+                <h2 data-i18n="poles_title">Nos 5 Pôles de Compétences</h2>
+                <p data-i18n="poles_sub">Des prestations intellectuelles et techniques orientées vers le résultat.</p>
             </div>
             <div class="services-grid">
-                
-                <!-- Pole 1 -->
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-file-alt"></i></div>
                     <h3>01 — Document Design</h3>
-                    <p>Mise en forme et structuration de haut niveau pour vos travaux écrits.</p>
+                    <p data-i18n="p1_desc">Conception, harmonisation et mise en page professionnelle de vos documents écrits.</p>
                     <ul class="service-list">
-                        <li><i class="fas fa-check"></i> Mémoires, thèses & rapports d'activités</li>
-                        <li><i class="fas fa-check"></i> Dossiers administratifs & institutionnels</li>
-                        <li><i class="fas fa-check"></i> Relecture, mise en page & typographie</li>
+                        <li><i class="fas fa-check"></i> Rapports de stage, mémoires et thèses</li>
+                        <li><i class="fas fa-check"></i> Dossiers administratifs et rapports d'activités</li>
+                        <li><i class="fas fa-check"></i> Sommaires automatiques, normes bibliographiques & PDF</li>
                     </ul>
                 </div>
 
-                <!-- Pole 2 -->
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-desktop"></i></div>
                     <h3>02 — Presentation Studio</h3>
-                    <p>Supports de présentation visuels, clairs et convaincants.</p>
+                    <p data-i18n="p2_desc">Création de supports visuels clairs, hiérarchisés et convaincants.</p>
                     <ul class="service-list">
-                        <li><i class="fas fa-check"></i> PowerPoint de soutenance académique</li>
-                        <li><i class="fas fa-check"></i> Pitch decks & réunions d'affaires</li>
-                        <li><i class="fas fa-check"></i> Displays scientifiques & formations</li>
+                        <li><i class="fas fa-check"></i> Diaporamas de soutenance académique</li>
+                        <li><i class="fas fa-check"></i> Pitch decks projets et présentations institutionnelles</li>
+                        <li><i class="fas fa-check"></i> Supports de séminaires et formations</li>
                     </ul>
                 </div>
 
-                <!-- Pole 3 -->
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-table"></i></div>
-                    <h3>03 — Data & Management</h3>
-                    <p>Conception d'outils de suivi et d'exploitation Excel / Sheets.</p>
+                    <h3>03 — Data & Management Tools</h3>
+                    <p data-i18n="p3_desc">Conception d'outils de pilotage et d'analyse sous Excel et Google Sheets.</p>
                     <ul class="service-list">
-                        <li><i class="fas fa-check"></i> Tableaux de bord dynamiques & indicateurs</li>
-                        <li><i class="fas fa-check"></i> Suivi de stocks, trésorerie & budgets</li>
-                        <li><i class="fas fa-check"></i> Formules avancées & automatisations</li>
+                        <li><i class="fas fa-check"></i> Tableaux de bord dynamiques & graphiques</li>
+                        <li><i class="fas fa-check"></i> Gestion de stocks, budgets et trésorerie</li>
+                        <li><i class="fas fa-check"></i> Formules automatisées et suivi d'indicateurs</li>
                     </ul>
                 </div>
 
-                <!-- Pole 4 -->
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-poll-h"></i></div>
                     <h3>04 — Surveys & Assessments</h3>
-                    <p>Dispositifs de collecte de données et d'évaluation en ligne.</p>
+                    <p data-i18n="p4_desc">Systèmes de collecte de données fiables et dispositifs d'évaluation en ligne.</p>
                     <ul class="service-list">
-                        <li><i class="fas fa-check"></i> Forms Google / Tally pour recherches</li>
-                        <li><i class="fas fa-check"></i> Quiz interactifs & tests de connaissances</li>
-                        <li><i class="fas fa-check"></i> Synthèses descriptives des résultats</li>
+                        <li><i class="fas fa-check"></i> Questionnaires d'enquête (Google Forms / Tally)</li>
+                        <li><i class="fas fa-check"></i> Quiz évaluatifs et tests de sélection</li>
+                        <li><i class="fas fa-check"></i> Extraction et rapport statistique descriptif</li>
                     </ul>
                 </div>
 
-                <!-- Pole 5 -->
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-chess"></i></div>
                     <h3>05 — Chess Mentoring</h3>
-                    <p>Accompagnement méthodique et entraînement au jeu d'échecs.</p>
+                    <p data-i18n="p5_desc">Formation structurée et accompagnement stratégique autour des échecs.</p>
                     <ul class="service-list">
-                        <li><i class="fas fa-check"></i> Initiation, tactique & principes stratégiques</li>
-                        <li><i class="fas fa-check"></i> Analyse approfondie de parties jouées</li>
-                        <li><i class="fas fa-check"></i> Préparation ciblée aux compétitions</li>
+                        <li><i class="fas fa-check"></i> Initiation, principes d'ouverture et tactique</li>
+                        <li><i class="fas fa-check"></i> Analyse critique de parties et calcul</li>
+                        <li><i class="fas fa-check"></i> Coaching individuel, collectif et tournois</li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Démos -->
+    <!-- Portfolio : Études de Cas Réelles -->
     <section id="portfolio" class="container">
         <div class="section-title">
-            <h2>Portfolio & Échantillons</h2>
-            <p>Aperçu des standards de finition livrés à nos clients (Spécimens de démonstration).</p>
+            <h2 data-i18n="cases_title">Études de Cas & Réalisations</h2>
+            <p data-i18n="cases_sub">Exemples concrets de projets conçus et déployés en contextes académiques, associatifs et opérationnels.</p>
         </div>
-        <div class="portfolio-grid">
-            
-            <div class="portfolio-card">
-                <div class="portfolio-header">
-                    <span class="portfolio-tag">Document</span>
-                    <i class="fas fa-book fa-2x"></i>
+
+        <div class="cases-grid">
+            <!-- Cas 1 -->
+            <div class="case-card">
+                <div class="case-top">
+                    <span class="case-badge">Document Design</span>
+                    <i class="fas fa-book-open"></i>
                 </div>
-                <div class="portfolio-body">
-                    <h4>Rapport de Recherche Agronomique</h4>
-                    <p>Mise en page d'un mémoire de 60 pages : sommaire automatique, graphiques harmonisés et typographie académique.</p>
+                <div class="case-body">
+                    <h4>Rapport de Diagnostic Rural Agronomique</h4>
+                    <p class="case-detail"><strong>Contexte :</strong> Restitution d'une enquête de terrain en milieu rural (Borgou, Bénin).</p>
+                    <p class="case-detail"><strong>Intervention :</strong> Structuration complète du document, hiérarchisation des titres, mise en forme des tableaux de données et création d'une charte éditoriale claire.</p>
+                    <div class="case-result"><i class="fas fa-check-circle"></i> Résultat : Livrable technique prêt pour validation universitaire sans reprise de forme.</div>
                 </div>
             </div>
 
-            <div class="portfolio-card">
-                <div class="portfolio-header">
-                    <span class="portfolio-tag">PowerPoint</span>
-                    <i class="fas fa-chart-pie fa-2x"></i>
+            <!-- Cas 2 -->
+            <div class="case-card">
+                <div class="case-top">
+                    <span class="case-badge">Gouvernance & Stratégie</span>
+                    <i class="fas fa-file-contract"></i>
                 </div>
-                <div class="portfolio-body">
-                    <h4>Pitch Deck Soutenance L3</h4>
-                    <p>Présentation de 15 slides minimalistes avec charte visuelle moderne et visuels de synthèse d'impact.</p>
-                </div>
-            </div>
-
-            <div class="portfolio-card">
-                <div class="portfolio-header">
-                    <span class="portfolio-tag">Data</span>
-                    <i class="fas fa-database fa-2x"></i>
-                </div>
-                <div class="portfolio-body">
-                    <h4>Tableau de Bord Budget & Stock</h4>
-                    <p>Outil Excel automatisé avec calculs de marge, indicateurs de performance et formulaires d'entrée.</p>
+                <div class="case-body">
+                    <h4>Dossier de Gouvernance Associative (52 pages)</h4>
+                    <p class="case-detail"><strong>Contexte :</strong> Structuration administrative et stratégique d'un club universitaire d'échecs.</p>
+                    <p class="case-detail"><strong>Intervention :</strong> Rédaction des statuts opérationnels, architecture d'un circuit compétitif sur 10 mois et système de classement par points.</p>
+                    <div class="case-result"><i class="fas fa-check-circle"></i> Résultat : Cadre institutionnel adopté permettant l'organisation de séminaires et tournois.</div>
                 </div>
             </div>
 
-            <div class="portfolio-card">
-                <div class="portfolio-header">
-                    <span class="portfolio-tag">Survey</span>
-                    <i class="fas fa-tasks fa-2x"></i>
+            <!-- Cas 3 -->
+            <div class="case-card">
+                <div class="case-top">
+                    <span class="case-badge">Surveys & Assessments</span>
+                    <i class="fas fa-clipboard-check"></i>
                 </div>
-                <div class="portfolio-body">
-                    <h4>Questionnaire de Terrain (30 Qs)</h4>
-                    <p>Formulaire Google Forms avec logique conditionnelle, tri automatique et rapport graphique exploitable.</p>
+                <div class="case-body">
+                    <h4>Dispositif d'Évaluation & Compétition en Ligne</h4>
+                    <p class="case-detail"><strong>Contexte :</strong> Organisation d'un concours académique de culture générale (Challenge JCCG).</p>
+                    <p class="case-detail"><strong>Intervention :</strong> Conception des questionnaires chronométrés, automatisation du calcul des scores et génération automatisée des attestations de mérite.</p>
+                    <div class="case-result"><i class="fas fa-check-circle"></i> Résultat : Collecte fluide, classement instantané et délivrance rapide des certificats.</div>
                 </div>
             </div>
 
+            <!-- Cas 4 -->
+            <div class="case-card">
+                <div class="case-top">
+                    <span class="case-badge">Presentation Studio</span>
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <div class="case-body">
+                    <h4>Modules Pédagogiques de Séminaire</h4>
+                    <p class="case-detail"><strong>Contexte :</strong> Séminaire de lancement et de formation stratégique en partenariat institutionnel.</p>
+                    <p class="case-detail"><strong>Intervention :</strong> Création de supports visuels minimalistes, schémas explicatifs et progression pédagogique structurée.</p>
+                    <div class="case-result"><i class="fas fa-check-circle"></i> Résultat : Supports clairs facilitant la compréhension immédiate de l'auditoire.</div>
+                </div>
+            </div>
+
+            <!-- Cas 5 -->
+            <div class="case-card">
+                <div class="case-top">
+                    <span class="case-badge">Data & Management</span>
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="case-body">
+                    <h4>Outil de Suivi Commercial & Stocks</h4>
+                    <p class="case-detail"><strong>Contexte :</strong> Besoin de suivi d'activité pour une unité commerciale locale à Parakou.</p>
+                    <p class="case-detail"><strong>Intervention :</strong> Modélisation d'un classeur structuré intégrant entrées/sorties, calcul automatique des marges et synthèse mensuelle.</p>
+                    <div class="case-result"><i class="fas fa-check-circle"></i> Résultat : Visibilité immédiate sur la rentabilité et réduction des erreurs de calcul.</div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Tarification Complète (Ajustée /2,5) -->
+    <!-- Grille Tarifaire Complète (Ajustée / 2,5 et harmonisée en F CFA) -->
     <section id="tarifs" class="tarifs-section">
         <div class="container" style="padding: 0;">
             <div class="section-title">
-                <h2>Grille Tarifaire Indicative</h2>
-                <p>Des tarifs transparents, adaptés au marché local et proportionnés à la complexité de votre demande.</p>
+                <h2 data-i18n="pricing_title">Grille Tarifaire Transparente</h2>
+                <p data-i18n="pricing_sub">Tarifs ajustés aux réalités économiques locales. Tous les prix incluent les fichiers sources et 2 séries de révisions.</p>
             </div>
+
             <div class="tarifs-grid">
-                
-                <!-- Documents -->
                 <div class="tarif-card">
-                    <h3>Document Design <i class="fas fa-file-pdf"></i></h3>
+                    <h3>01. Document Design <i class="fas fa-file-alt"></i></h3>
                     <table class="tarif-table">
                         <tr><td>5 à 10 pages</td><td>2 000 F CFA</td></tr>
                         <tr><td>11 à 20 pages</td><td>3 500 F CFA</td></tr>
@@ -890,265 +865,467 @@
                     </table>
                 </div>
 
-                <!-- PowerPoint -->
                 <div class="tarif-card">
-                    <h3>Presentation Studio <i class="fas fa-tv"></i></h3>
+                    <h3>02. Presentation Studio <i class="fas fa-desktop"></i></h3>
                     <table class="tarif-table">
                         <tr><td>5 à 10 diapositives</td><td>2 000 F CFA</td></tr>
                         <tr><td>11 à 15 diapositives</td><td>3 000 F CFA</td></tr>
                         <tr><td>16 à 20 diapositives</td><td>4 000 F CFA</td></tr>
                         <tr><td>21 à 30 diapositives</td><td>6 000 F CFA</td></tr>
                         <tr><td>31 à 40 diapositives</td><td>8 000 F CFA</td></tr>
-                        <tr><td>Plus de 40 slides</td><td>Sur devis</td></tr>
+                        <tr><td>Plus de 40 diapositives</td><td>Sur devis</td></tr>
                     </table>
                 </div>
 
-                <!-- Data -->
                 <div class="tarif-card">
-                    <h3>Data & Management <i class="fas fa-table"></i></h3>
+                    <h3>03. Data & Management <i class="fas fa-table"></i></h3>
                     <table class="tarif-table">
                         <tr><td>Tableau simple</td><td>1 500 F CFA</td></tr>
                         <tr><td>Tableau avec formules</td><td>2 000 F CFA</td></tr>
                         <tr><td>Classeur multi-feuilles</td><td>3 500 F CFA</td></tr>
                         <tr><td>Gestion & automatisation</td><td>5 000 F CFA</td></tr>
-                        <tr><td>Tableau de bord sur-mesure</td><td>6 000 F CFA</td></tr>
+                        <tr><td>Tableau de bord complet</td><td>6 000 F CFA</td></tr>
                     </table>
                 </div>
 
-                <!-- Surveys -->
                 <div class="tarif-card">
-                    <h3>Surveys & Assessments <i class="fas fa-poll"></i></h3>
+                    <h3>04. Surveys & Assessments <i class="fas fa-poll-h"></i></h3>
                     <table class="tarif-table">
-                        <tr><td>Formulaire simple</td><td>1 200 F CFA</td></tr>
-                        <tr><td>Formulaire 11–25 Qs</td><td>2 000 F CFA</td></tr>
-                        <tr><td>Formulaire 26–40 Qs</td><td>3 200 F CFA</td></tr>
-                        <tr><td>Questionnaire Recherche</td><td>4 000 – 6 000 F CFA</td></tr>
-                        <tr><td>Quiz interactif (20–50 Qs)</td><td>1 500 – 3 000 F CFA</td></tr>
+                        <tr><td>Formulaire simple (≤ 10 Qs)</td><td>1 200 F CFA</td></tr>
+                        <tr><td>Formulaire 11 à 25 questions</td><td>2 000 F CFA</td></tr>
+                        <tr><td>Formulaire 26 à 40 questions</td><td>3 200 F CFA</td></tr>
+                        <tr><td>Questionnaire de recherche</td><td>4 000 – 6 000 F CFA</td></tr>
+                        <tr><td>Quiz interactif (20 à 50 Qs)</td><td>1 500 – 3 000 F CFA</td></tr>
                     </table>
                 </div>
 
-                <!-- Chess -->
                 <div class="tarif-card">
-                    <h3>Chess Mentoring <i class="fas fa-chess-knight"></i></h3>
+                    <h3>05. Chess Mentoring <i class="fas fa-chess-knight"></i></h3>
                     <table class="tarif-table">
-                        <tr><td>Séance indiv. (1h)</td><td>800 F CFA</td></tr>
-                        <tr><td>Pack 4 séances</td><td>2 800 F CFA</td></tr>
-                        <tr><td>Pack 8 séances</td><td>5 200 F CFA</td></tr>
-                        <tr><td>Séance collective</td><td>400 F CFA / pers</td></tr>
-                        <tr><td>Analyse d'une partie</td><td>600 F CFA</td></tr>
+                        <tr><td>Séance individuelle (1h)</td><td>800 F CFA</td></tr>
+                        <tr><td>Pack 4 séances (1h/séance)</td><td>2 800 F CFA</td></tr>
+                        <tr><td>Pack 8 séances (1h/séance)</td><td>5 200 F CFA</td></tr>
+                        <tr><td>Séance collective</td><td>400 F CFA / pers.</td></tr>
+                        <tr><td>Analyse écrite d'une partie</td><td>600 F CFA</td></tr>
                     </table>
                 </div>
 
-                <!-- Packs -->
-                <div class="tarif-card" style="border-color: var(--accent-dore);">
-                    <h3>Packs Commerciaux <i class="fas fa-box-open"></i></h3>
+                <div class="tarif-card" style="border: 1px solid var(--accent-dore);">
+                    <h3>Packs Commerciaux <i class="fas fa-award"></i></h3>
                     <table class="tarif-table">
-                        <tr><td>Pack Académique (Doc + Slide)</td><td>5 000 F CFA</td></tr>
-                        <tr><td>Pack Recherche (Form + Doc)</td><td>4 000 F CFA</td></tr>
-                        <tr><td>Pack Organisation (Data + Suivi)</td><td>5 000 F CFA</td></tr>
-                        <tr><td>Pack Évaluation (Quiz + Grille)</td><td>3 000 F CFA</td></tr>
-                        <tr><td>Pack Présentation Pro</td><td>6 500 F CFA</td></tr>
+                        <tr><td>Pack Académique (Doc 30p + 15 slides)</td><td>5 000 F CFA <small style="color:var(--accent-dore);">(-37%)</small></td></tr>
+                        <tr><td>Pack Recherche (Form 25Q + Rapport)</td><td>4 000 F CFA <small style="color:var(--accent-dore);">(-27%)</small></td></tr>
+                        <tr><td>Pack Organisation (Classeur + Suivi)</td><td>5 000 F CFA <small style="color:var(--accent-dore);">(-28%)</small></td></tr>
+                        <tr><td>Pack Évaluation (Quiz 35Q + Grille)</td><td>3 000 F CFA <small style="color:var(--accent-dore);">(-25%)</small></td></tr>
+                        <tr><td>Pack Présentation Pro (25 slides + Script)</td><td>6 500 F CFA <small style="color:var(--accent-dore);">(-23%)</small></td></tr>
                     </table>
                 </div>
+            </div>
 
+            <div class="tarif-note">
+                <strong><i class="fas fa-info-circle"></i> Règles de facturation et périmètre :</strong> Les tarifs documents s'appliquent sur la base des textes bruts fournis par le client. Chaque prestation inclut la livraison des fichiers éditables (Word, PowerPoint, Excel) + PDF, ainsi que <strong>2 séries de corrections mineures</strong>. Le délai standard est de <strong>3 à 5 jours ouvrés</strong> à compter de la réception de l'acompte de 50 %. Une livraison urgente (24h à 48h ouvrées) entraîne une majoration fixe de <strong>+30 %</strong> (48h) ou <strong>+50 %</strong> (24h).
             </div>
         </div>
     </section>
 
-    <!-- Formulaire de Devis & Contact -->
-    <section id="devis" class="container">
+    <!-- Gouvernance & Crédibilité Institutionnelle -->
+    <section id="gouvernance" class="container">
         <div class="section-title">
-            <h2>Demande de Devis & Contact</h2>
-            <p>Remplissez le formulaire ci-dessous pour transmettre directement votre besoin au cabinet via WhatsApp.</p>
+            <h2 data-i18n="gov_title">Le Cabinet & Sa Gouvernance</h2>
+            <p data-i18n="gov_sub">Une structure fondée sur la rigueur analytique, la méthode et l'engagement.</p>
         </div>
-        
-        <div class="contact-section-wrapper">
-            
-            <div class="contact-info-side">
-                <h3>Parlons de votre projet</h3>
-                <p style="color: var(--texte-clair); margin-bottom: 2rem;">
-                    Nous vous répondrons sous 24 heures (jours ouvrés) avec une proposition financière et un calendrier d'exécution précis.
+
+        <div class="gov-card">
+            <div>
+                <h3 style="color: var(--bleu-profond); margin-bottom: 0.8rem;">Direction & Expertise</h3>
+                <p style="color: var(--texte-clair); margin-bottom: 1rem;">
+                    <strong>NAOU DIGITAL SERVICES</strong> est fondé et dirigé par <strong>Naoufal IDRISSOU</strong> depuis Parakou (Bénin). Alliant formation supérieure en agronomie et gestion des ressources naturelles, compétences en analyse de données (programme GCI World — Université de Tokyo) et responsabilité technique au sein d'organisations étudiantes et échiquéennes, le cabinet applique une discipline méthodologique stricte à chaque dossier confié.
+                </p>
+                <p style="color: var(--texte-clair);">
+                    <strong>Gestion des données :</strong> Vos fichiers sont stockés dans un espace privé chiffré uniquement pendant la durée de la prestation et supprimés sur simple demande après livraison finale.
+                </p>
+                <div class="gov-badges">
+                    <span class="gov-pill"><i class="fas fa-map-marker-alt"></i> Basé à Parakou, Bénin</span>
+                    <span class="gov-pill"><i class="fas fa-globe"></i> Intervention Nationale & Internationale</span>
+                    <span class="gov-pill"><i class="fas fa-language"></i> Bilingue Français / Anglais</span>
+                </div>
+            </div>
+            <div style="background: var(--gris-bleute); padding: 1.8rem; border-radius: 10px;">
+                <h4 style="color: var(--bleu-profond); margin-bottom: 0.8rem;"><i class="fas fa-shield-alt" style="color:var(--bleu-petrole);"></i> Engagements Qualité</h4>
+                <ul style="list-style: none; font-size: 0.9rem; color: var(--texte-sombre);">
+                    <li style="margin-bottom: 0.6rem;"><i class="fas fa-check" style="color:var(--bleu-petrole); margin-right:6px;"></i> Devis écrit et gratuit avant tout engagement.</li>
+                    <li style="margin-bottom: 0.6rem;"><i class="fas fa-check" style="color:var(--bleu-petrole); margin-right:6px;"></i> Zéro sous-traitance non autorisée.</li>
+                    <li style="margin-bottom: 0.6rem;"><i class="fas fa-check" style="color:var(--bleu-petrole); margin-right:6px;"></i> Respect absolu des délais convenus.</li>
+                    <li><i class="fas fa-check" style="color:var(--bleu-petrole); margin-right:6px;"></i> Charte anti-plagiat et intégrité académique.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulaire de Devis Double Choix -->
+    <section id="devis" class="container" style="padding-top: 1rem;">
+        <div class="section-title">
+            <h2 data-i18n="quote_title">Demander un Devis Gratuit</h2>
+            <p data-i18n="quote_sub">Décrivez votre besoin et choisissez votre canal de transmission préféré (WhatsApp ou E-mail).</p>
+        </div>
+
+        <div class="contact-wrapper">
+            <div>
+                <h3 style="color: var(--bleu-profond); margin-bottom: 1rem;">Coordonnées Directes</h3>
+                <p style="color: var(--texte-clair); font-size: 0.94rem; margin-bottom: 1.8rem;">
+                    Chaque demande est étudiée personnellement. Vous recevez un chiffrage précis et un délai de livraison sous 24h ouvrées.
                 </p>
 
-                <div class="info-card-item">
-                    <div class="info-card-icon"><i class="fas fa-envelope"></i></div>
-                    <div class="info-card-text">
-                        <h4>E-mail Professionnel</h4>
-                        <a href="mailto:naoufalidrissou925@gmail.com">naoufalidrissou925@gmail.com</a>
+                <div class="info-row">
+                    <div class="info-icon"><i class="fab fa-whatsapp fa-lg"></i></div>
+                    <div>
+                        <small style="color:var(--texte-clair); font-weight:700;">TÉLÉPHONE & WHATSAPP</small><br>
+                        <a href="https://wa.me/2290143372442" target="_blank" style="color:var(--bleu-profond); font-weight:800; text-decoration:none;">+229 01 43 37 24 42</a>
                     </div>
                 </div>
 
-                <div class="info-card-item">
-                    <div class="info-card-icon"><i class="fab fa-whatsapp"></i></div>
-                    <div class="info-card-text">
-                        <h4>WhatsApp Direct</h4>
-                        <a href="https://wa.me/2290143372442" target="_blank">+229 01 43 37 24 42</a>
+                <div class="info-row">
+                    <div class="info-icon"><i class="fas fa-envelope fa-lg"></i></div>
+                    <div>
+                        <small style="color:var(--texte-clair); font-weight:700;">E-MAIL PROFESSIONNEL</small><br>
+                        <a href="mailto:naoufalidrissou925@gmail.com" style="color:var(--bleu-profond); font-weight:800; text-decoration:none;">naoufalidrissou925@gmail.com</a>
                     </div>
                 </div>
 
-                <div class="info-card-item">
-                    <div class="info-card-icon"><i class="fas fa-shield-alt"></i></div>
-                    <div class="info-card-text">
-                        <h4>Garantie & Confidentialité</h4>
-                        <p style="font-size: 0.95rem; font-weight: 400; color: var(--texte-clair);">
-                            Données sécurisées. Respect strict de l'éthique et de l'intégrité académique.
-                        </p>
+                <div class="info-row">
+                    <div class="info-icon"><i class="fas fa-clock fa-lg"></i></div>
+                    <div>
+                        <small style="color:var(--texte-clair); font-weight:700;">HORAIRES DE TRAITEMENT</small><br>
+                        <span style="color:var(--bleu-profond); font-weight:700;">Lundi – Samedi : 08h00 – 20h00 (WAT)</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Formulaire Interactif -->
-            <form id="quoteForm">
+            <form id="quoteForm" novalidate>
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="clientName">Nom complet *</label>
-                        <input type="text" id="clientName" class="form-control" placeholder="Votre nom" required>
+                        <label for="clientName">Nom complet ou Organisation *</label>
+                        <input type="text" id="clientName" name="clientName" class="form-control" placeholder="Ex : Jean K. / Association..." required>
                     </div>
                     <div class="form-group">
-                        <label for="clientContact">Contact (E-mail ou Téléphone) *</label>
-                        <input type="text" id="clientContact" class="form-control" placeholder="Ex: 01 02 03 04" required>
+                        <label for="clientContact">Votre WhatsApp ou E-mail *</label>
+                        <input type="text" id="clientContact" name="clientContact" class="form-control" placeholder="Ex : +229 01 XX XX XX XX" required>
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="servicePole">Pôle concerné *</label>
-                        <select id="servicePole" class="form-control" required>
-                            <option value="">Sélectionner un pôle...</option>
-                            <option value="Document Design">01 — Document Design</option>
-                            <option value="Presentation Studio">02 — Presentation Studio</option>
-                            <option value="Data & Management">03 — Data & Management Tools</option>
-                            <option value="Surveys & Assessments">04 — Surveys & Assessments</option>
-                            <option value="Chess Mentoring">05 — Chess Mentoring</option>
-                            <option value="Pack Commercial">Pack Commercial Sur-mesure</option>
+                        <label for="servicePole">Pôle de prestation *</label>
+                        <select id="servicePole" name="servicePole" class="form-control" required>
+                            <option value="">-- Choisir un pôle --</option>
+                            <option value="01 - Document Design">01 — Document Design</option>
+                            <option value="02 - Presentation Studio">02 — Presentation Studio</option>
+                            <option value="03 - Data & Management Tools">03 — Data & Management Tools</option>
+                            <option value="04 - Surveys & Assessments">04 — Surveys & Assessments</option>
+                            <option value="05 - Chess Mentoring">05 — Chess Mentoring</option>
+                            <option value="Pack Commercial">Pack Commercial</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="deliveryDelay">Délai souhaité</label>
-                        <select id="deliveryDelay" class="form-control">
+                        <label for="deliveryDelay">Délai d'exécution souhaité</label>
+                        <select id="deliveryDelay" name="deliveryDelay" class="form-control">
                             <option value="Standard (3 à 5 jours ouvrés)">Standard (3 à 5 jours ouvrés)</option>
-                            <option value="Urgent (24 à 48h)">Urgent (+30 à 50% majoration)</option>
+                            <option value="Urgent 48h (+30%)">Urgent 48h (+30 %)</option>
+                            <option value="Urgent 24h (+50%)">Urgent 24h (+50 %)</option>
                         </select>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="projectDetails">Description du besoin & volume (pages / slides) *</label>
-                    <textarea id="projectDetails" class="form-control" rows="4" placeholder="Détaillez votre projet (ex: Mise en page de mémoire de 35 pages, 12 slides PowerPoint...)" required></textarea>
+                    <label for="projectDetails">Détails du projet (volume de pages, diapositives, objectifs) *</label>
+                    <textarea id="projectDetails" name="projectDetails" class="form-control" rows="4" placeholder="Précisez la nature du travail, le nombre approximatif de pages/slides et vos attentes..." required></textarea>
                 </div>
 
-                <button type="submit" class="btn-submit-form">
-                    <i class="fab fa-whatsapp"></i> Envoyer ma demande via WhatsApp
-                </button>
-                <p style="font-size: 0.8rem; color: var(--texte-clair); margin-top: 0.5rem; text-align: center;">
-                    * Ce bouton ouvrira votre application WhatsApp avec le message pré-rempli.
+                <div class="action-buttons-grid">
+                    <button type="button" id="sendWhatsAppBtn" class="btn-wa">
+                        <i class="fab fa-whatsapp fa-lg"></i> Envoyer via WhatsApp
+                    </button>
+                    <button type="button" id="sendEmailBtn" class="btn-mail">
+                        <i class="fas fa-envelope fa-lg"></i> Envoyer par E-mail
+                    </button>
+                </div>
+                <p style="font-size: 0.78rem; color: var(--texte-clair); margin-top: 0.6rem; text-align: center;">
+                    En cliquant, votre message pré-rempli s'ouvrira directement dans l'application choisie.
                 </p>
+                <div id="formFeedback" class="feedback-banner" role="status" aria-live="polite"></div>
             </form>
-
         </div>
     </section>
 
-    <!-- FAQ Accordion -->
-    <section id="faq" class="container" style="padding-top: 0;">
+    <!-- FAQ Accessible -->
+    <section id="faq" class="container">
         <div class="section-title">
-            <h2>Foire Aux Questions</h2>
-            <p>Les réponses à vos interrogations fréquentes.</p>
+            <h2>Foire Aux Questions (FAQ)</h2>
+            <p>Toutes les réponses sur notre fonctionnement, nos tarifs et nos garanties.</p>
         </div>
-        <div class="faq-accordion">
-            
+
+        <div class="faq-list">
             <div class="faq-item">
-                <div class="faq-question">Quelles sont vos conditions de paiement et de livraison ? <i class="fas fa-chevron-down"></i></div>
-                <div class="faq-answer">
-                    Un acompte de 50 % est demandé à la confirmation de la commande. Le solde s'effectue avant la remise des fichiers finaux. Les délais standard s'entendent en jours ouvrés à compter de la validation de l'acompte.
+                <button type="button" class="faq-btn" aria-expanded="false">
+                    <span>Comment se déroule la commande et le paiement ?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-panel">
+                    Après validation du devis gratuit, un acompte de <strong>50 %</strong> confirme le lancement de la production (payable par Mobile Money — MTN MoMo / Moov Money / Celtiis Cash — ou virement). Le solde de 50 % est réglé avant l'envoi des fichiers finaux non filigranés.
                 </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Rédigez-vous les travaux à la place des étudiants ? <i class="fas fa-chevron-down"></i></div>
-                <div class="faq-answer">
-                    Non. Dans le cadre du respect strict de l'intégrité académique, nous n'effectuons aucune rédaction frauduleuse à la place des candidats. Nous intervenons exclusivement sur la mise en forme, la relecture, la structuration visuelle et l'organisation des supports pédagogiques.
+                <button type="button" class="faq-btn" aria-expanded="false">
+                    <span>Qu'inclut exactement la garantie de révision ?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-panel">
+                    Chaque prestation comprend <strong>2 séries de corrections mineures</strong> (ajustements visuels, corrections typographiques, alignements) dans un délai de 7 jours suivant la livraison. Toute refonte structurelle ou ajout de contenu nouveau fait l'objet d'un avenant chiffré.
                 </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Comment est garantie la confidentialité de mes données ? <i class="fas fa-chevron-down"></i></div>
-                <div class="faq-answer">
-                    Toutes les données, fichiers et documents confiés sont traités de manière strictement confidentielle. Ils sont conservés de manière sécurisée et ne sont jamais divulgués ou partagés à des tiers.
+                <button type="button" class="faq-btn" aria-expanded="false">
+                    <span>Rédigez-vous des mémoires ou devoirs à la place des étudiants ?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-panel">
+                    <strong>Non, jamais.</strong> NAOU DIGITAL SERVICES applique une charte stricte d'intégrité académique. Nous intervenons uniquement sur la structuration éditoriale, la mise en page normative, la relecture orthographique, la conception de diapositives de soutenance et l'outillage méthodologique.
                 </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Que couvre la série de corrections incluse ? <i class="fas fa-chevron-down"></i></div>
-                <div class="faq-answer">
-                    Une série de corrections raisonnables est incluse pour ajuster le livrable aux consignes initiales convenues lors du devis (ajustements typographiques, mise en page). Les modifications structurelles majeures ou ajouts hors périmètre font l'objet d'une facturation distincte.
+                <button type="button" class="faq-btn" aria-expanded="false">
+                    <span>Mes documents confidentiels sont-ils protégés ?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-panel">
+                    Oui. Aucun document, jeu de données ou résultat d'enquête confié au cabinet n'est partagé, publié ou réutilisé. Les fichiers de travail sont purgés de nos supports après la clôture définitive de la mission.
                 </div>
             </div>
-
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="logo">
-                <span class="logo-badge">NDS</span>
-                <span class="logo-text">NAOU DIGITAL SERVICES</span>
-            </div>
+        <div class="footer-top">
             <div>
-                Structured solutions. Projects that move forward.
+                <strong style="color:var(--blanc); font-size:1.05rem;">NAOU DIGITAL SERVICES</strong><br>
+                <span>Cabinet de prestations intellectuelles et numériques — Parakou, Bénin.</span>
+            </div>
+            <div class="legal-links">
+                <button type="button" onclick="openModal('modalMentions')">Mentions légales</button>
+                <button type="button" onclick="openModal('modalConfidentialite')">Politique de confidentialité</button>
+                <button type="button" onclick="openModal('modalCGP')">Conditions de prestation</button>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 NAOU DIGITAL SERVICES. Tous droits réservés. | Cabinet de prestations intellectuelles & numériques.</p>
+            <p>&copy; 2026 NAOU DIGITAL SERVICES. Tous droits réservés. | Structured solutions. Projects that move forward.</p>
         </div>
     </footer>
 
-    <!-- JavaScript Interactif -->
+    <!-- Modales Légales -->
+    <div id="modalMentions" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="titleMentions">
+        <div class="modal-box">
+            <button type="button" class="modal-close" onclick="closeModals()" aria-label="Fermer">&times;</button>
+            <h3 id="titleMentions">Mentions Légales</h3>
+            <p><strong>Dénomination :</strong> NAOU DIGITAL SERVICES (Initiative indépendante de prestations intellectuelles et numériques en cours de structuration juridique au Bénin).</p>
+            <p><strong>Responsable de publication :</strong> Naoufal IDRISSOU.</p>
+            <p><strong>Localisation :</strong> Parakou, Département du Borgou, République du Bénin.</p>
+            <p><strong>Contact :</strong> naoufalidrissou925@gmail.com | +229 01 43 37 24 42.</p>
+            <p><strong>Hébergement :</strong> GitHub Pages (GitHub, Inc.).</p>
+        </div>
+    </div>
+
+    <div id="modalConfidentialite" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="titleConf">
+        <div class="modal-box">
+            <button type="button" class="modal-close" onclick="closeModals()" aria-label="Fermer">&times;</button>
+            <h3 id="titleConf">Politique de Confidentialité</h3>
+            <p>NAOU DIGITAL SERVICES accorde une importance primordiale à la protection des données personnelles et professionnelles de ses clients.</p>
+            <ul>
+                <li><strong>Données collectées :</strong> Nom, coordonnées de contact (WhatsApp/e-mail) et documents transmis volontairement pour l'exécution du devis ou de la prestation.</li>
+                <li><strong>Utilisation :</strong> Exclusivement réservée au traitement de votre commande et à la communication liée au projet. Aucune donnée n'est vendue ou cédée à des tiers.</li>
+                <li><strong>Conservation :</strong> Les fichiers confiés sont supprimés à l'issue de la prestation sur simple demande ou dans un délai maximum de 30 jours après livraison finale.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modalCGP" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="titleCGP">
+        <div class="modal-box">
+            <button type="button" class="modal-close" onclick="closeModals()" aria-label="Fermer">&times;</button>
+            <h3 id="titleCGP">Conditions Générales de Prestation</h3>
+            <ul>
+                <li><strong>Devis & Acompte :</strong> Tout travail débute après acceptation écrite du devis et versement d'un acompte de 50 %.</li>
+                <li><strong>Délais :</strong> Les délais standards (3 à 5 jours ouvrés) courent à partir de la réception complète des éléments sources et de l'acompte.</li>
+                <li><strong>Révisions :</strong> 2 séries de corrections mineures sont incluses. Les modifications hors périmètre initial font l'objet d'une facturation complémentaire.</li>
+                <li><strong>Éthique :</strong> Le cabinet se réserve le droit de refuser toute demande contraire à l'intégrité académique ou aux lois en vigueur.</li>
+            </ul>
+        </div>
+    </div>
+
     <script>
-        // Menu Mobile Toggle & Fermeture automatique après clic
+        // Configuration centrale
+        const CONFIG = {
+            email: "naoufalidrissou925@gmail.com",
+            whatsappNumber: "2290143372442"
+        };
+
+        // 1. Menu Mobile Accessible + Fermeture automatique
         const menuToggle = document.getElementById('menuToggle');
         const navLinks = document.getElementById('navLinks');
 
         menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('show');
+            const isOpen = navLinks.classList.toggle('show');
+            menuToggle.setAttribute('aria-expanded', isOpen);
         });
 
-        // Fermer le menu mobile automatiquement lorsqu'on clique sur un lien
-        const links = navLinks.querySelectorAll('a');
-        links.forEach(link => {
+        navLinks.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('show');
+                menuToggle.setAttribute('aria-expanded', 'false');
             });
         });
 
-        // FAQ Accordion
-        const faqItems = document.querySelectorAll('.faq-item');
-        faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question');
-            question.addEventListener('click', () => {
-                item.classList.toggle('active');
+        // 2. FAQ Accordéon Accessible
+        document.querySelectorAll('.faq-item').forEach(item => {
+            const btn = item.querySelector('.faq-btn');
+            btn.addEventListener('click', () => {
+                const isOpen = item.classList.toggle('open');
+                btn.setAttribute('aria-expanded', isOpen);
             });
         });
 
-        // Traitement Formulaire Devis vers WhatsApp
-        document.getElementById('quoteForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const name = document.getElementById('clientName').value;
-            const contact = document.getElementById('clientContact').value;
+        // 3. Modales Légales
+        function openModal(id) {
+            document.getElementById(id).classList.add('active');
+        }
+        function closeModals() {
+            document.querySelectorAll('.modal-overlay').forEach(m => m.classList.remove('active'));
+        }
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModals();
+        });
+
+        // 4. Formulaire Double Choix (WhatsApp vs E-mail) avec validation
+        function getFormData() {
+            const name = document.getElementById('clientName').value.trim();
+            const contact = document.getElementById('clientContact').value.trim();
             const pole = document.getElementById('servicePole').value;
             const delay = document.getElementById('deliveryDelay').value;
-            const details = document.getElementById('projectDetails').value;
+            const details = document.getElementById('projectDetails').value.trim();
+            const feedback = document.getElementById('formFeedback');
 
-            const textMessage = `*DEMANDE DE DEVIS — NAOU DIGITAL SERVICES*%0A%0A` +
-                `*Client :* ${encodeURIComponent(name)}%0A` +
-                `*Contact :* ${encodeURIComponent(contact)}%0A` +
-                `*Pôle concerné :* ${encodeURIComponent(pole)}%0A` +
-                `*Délai :* ${encodeURIComponent(delay)}%0A` +
-                `*Détails du projet :*%0A${encodeURIComponent(details)}`;
+            if (!name || !contact || !pole || !details) {
+                feedback.style.display = 'block';
+                feedback.style.backgroundColor = '#FEE2E2';
+                feedback.style.color = '#991B1B';
+                feedback.style.borderColor = '#FCA5A5';
+                feedback.textContent = "Veuillez remplir tous les champs obligatoires (*) avant l'envoi.";
+                return null;
+            }
+            return { name, contact, pole, delay, details, feedback };
+        }
 
-            const whatsappUrl = `https://wa.me/2290143372442?text=${textMessage}`;
-            window.open(whatsappUrl, '_blank');
+        function showSuccess(feedback, channel) {
+            feedback.style.display = 'block';
+            feedback.style.backgroundColor = '#DCFCE7';
+            feedback.style.color = '#15803D';
+            feedback.style.borderColor = '#86EFAC';
+            feedback.textContent = `Votre demande est prête ! Ouverture de ${channel} en cours...`;
+        }
+
+        document.getElementById('sendWhatsAppBtn').addEventListener('click', () => {
+            const data = getFormData();
+            if (!data) return;
+            showSuccess(data.feedback, "WhatsApp");
+            const msg = `*DEMANDE DE DEVIS — NAOU DIGITAL SERVICES*\n\n` +
+                        `*Client :* ${data.name}\n` +
+                        `*Contact :* ${data.contact}\n` +
+                        `*Pôle :* ${data.pole}\n` +
+                        `*Délai :* ${data.delay}\n` +
+                        `*Détails :* ${data.details}`;
+            window.open(`https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(msg)}`, '_blank');
+        });
+
+        document.getElementById('sendEmailBtn').addEventListener('click', () => {
+            const data = getFormData();
+            if (!data) return;
+            showSuccess(data.feedback, "votre messagerie E-mail");
+            const subject = `Demande de devis (${data.pole}) - ${data.name}`;
+            const body = `Bonjour NAOU DIGITAL SERVICES,\n\n` +
+                         `Nom / Organisation : ${data.name}\n` +
+                         `Contact : ${data.contact}\n` +
+                         `Pôle concerné : ${data.pole}\n` +
+                         `Délai souhaité : ${data.delay}\n\n` +
+                         `Description du projet :\n${data.details}\n\nCordialement.`;
+            window.location.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        });
+
+        // 5. Traduction FR / EN Complète
+        const translations = {
+            en: {
+                nav_sub: "Intellectual & Digital Services",
+                nav_method: "Method",
+                nav_services: "Services",
+                nav_cases: "Case Studies",
+                nav_pricing: "Pricing",
+                nav_about: "About",
+                nav_quote: "Free Quote",
+                hero_title: "Intellectual & Digital Services Cabinet",
+                hero_desc: "We support students, organizations, businesses, and individuals in Benin and internationally in designing structured documents, impactful presentations, data management tools, and assessment systems.",
+                hero_cta1: "Request a Free Quote",
+                hero_cta2: "View Case Studies",
+                trust_1: "Guaranteed response within 24 business hours",
+                trust_2: "Strict confidentiality of all files",
+                trust_3: "2 rounds of revisions included",
+                trust_4: "Full respect for academic integrity",
+                profile_title: "Tailored Solutions for Your Profile",
+                profile_sub: "Find the exact support designed for your status and goals.",
+                prof_1_t: "Students & Researchers",
+                prof_1_d: "Academic formatting of theses and internship reports, defense PowerPoint decks, and field survey forms.",
+                prof_2_t: "Associations & NGOs",
+                prof_2_d: "Annual activity reports, financial statements, member tracking sheets, and impact assessment tools.",
+                prof_3_t: "Businesses & Entrepreneurs",
+                prof_3_d: "Excel/Sheets dashboards for inventory and cash flow, commercial pitch decks, and administrative files.",
+                prof_4_t: "Chess Players & Clubs",
+                prof_4_d: "Individual or group strategic coaching, game analysis, and structured tournament preparation.",
+                method_title: "Our 4-Step Methodology",
+                method_sub: "A rigorous workflow ensuring the quality and accuracy of every deliverable.",
+                step_1_t: "Listen",
+                step_1_d: "In-depth analysis of your needs, technical requirements, and deadline.",
+                step_2_t: "Scope",
+                step_2_d: "Validation of the detailed quote, exact deliverables, and schedule prior to launch.",
+                step_3_t: "Design",
+                step_3_d: "Intellectual structuring, refined layout, or data modeling according to our standards.",
+                step_4_t: "Verify & Deliver",
+                step_4_d: "Full quality check, integration of your feedback, and handover of editable source files.",
+                poles_title: "Our 5 Core Practice Areas",
+                poles_sub: "Result-oriented intellectual and technical services.",
+                cases_title: "Case Studies & Track Record",
+                cases_sub: "Concrete examples of projects designed and deployed in academic, associative, and operational contexts.",
+                pricing_title: "Transparent Pricing Grid",
+                pricing_sub: "Prices adapted to local market realities. All rates include source files and 2 revision rounds.",
+                gov_title: "The Cabinet & Governance",
+                gov_sub: "A structure built on analytical rigor, methodology, and commitment.",
+                quote_title: "Request a Free Quote",
+                quote_sub: "Describe your project and choose your preferred channel (WhatsApp or Email)."
+            }
+        };
+
+        let currentLang = 'fr';
+        const originalFr = {};
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            originalFr[el.getAttribute('data-i18n')] = el.textContent;
+        });
+
+        document.getElementById('langBtn').addEventListener('click', () => {
+            currentLang = currentLang === 'fr' ? 'en' : 'fr';
+            document.documentElement.lang = currentLang;
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                el.textContent = currentLang === 'en' ? (translations.en[key] || originalFr[key]) : originalFr[key];
+            });
         });
     </script>
 </body>
